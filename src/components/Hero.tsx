@@ -3,18 +3,18 @@
 const Hero = () => {
   return (
     <section className="relative hero-gradient pt-20 overflow-hidden">
-      {/* Floating Flowers */}
-      <div className="floating-flower top-16 left-4 md:left-8 text-4xl" style={{ animationDelay: '0s' }}>
+      {/* Floating Flowers - Hidden on mobile */}
+      <div className="floating-flower top-16 left-4 md:left-8 text-4xl hidden md:block" style={{ animationDelay: '0s' }}>
         🌸
       </div>
-      <div className="floating-flower top-32 right-4 md:right-12 text-3xl" style={{ animationDelay: '2s' }}>
+      <div className="floating-flower top-32 right-4 md:right-12 text-3xl hidden md:block" style={{ animationDelay: '2s' }}>
         🌺
       </div>
-      <div className="floating-flower bottom-20 left-8 text-2xl" style={{ animationDelay: '4s' }}>
+      <div className="floating-flower bottom-20 left-8 text-2xl hidden md:block" style={{ animationDelay: '4s' }}>
         🌷
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-20">
+      <div className="container mx-auto px-4 py-2 md:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative animate-fade-in scale-110 lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
