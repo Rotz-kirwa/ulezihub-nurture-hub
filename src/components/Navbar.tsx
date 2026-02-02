@@ -5,9 +5,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#about', label: 'About Us' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'About Us' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -15,11 +15,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <span className="text-2xl">🌱</span>
             <div>
               <span className="font-serif text-xl md:text-2xl font-semibold text-primary">
-                Tujifunze Ulezi
+                Jifunze Ulezi HUb
               </span>
               <span className="block text-xs text-coral font-medium tracking-wider">
                 NURTURE HUB
@@ -39,7 +39,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#book"
+              href="/book"
               className="btn-primary"
             >
               Book a Session
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#book"
+                href="/book"
                 onClick={() => setIsOpen(false)}
                 className="btn-primary text-center"
               >
