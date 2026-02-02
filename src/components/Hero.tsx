@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section className="relative hero-gradient pt-16 md:pt-20 overflow-hidden">
+    <section className="relative hero-gradient pt-16 md:pt-20 overflow-hidden -mt-16 md:mt-0">
       {/* Floating Flowers - Hidden on mobile */}
       <div className="floating-flower top-16 left-4 md:left-8 text-4xl hidden md:block" style={{ animationDelay: '0s' }}>
         🌸
