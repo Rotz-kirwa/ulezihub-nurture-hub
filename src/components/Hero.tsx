@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section className="relative hero-gradient pt-20 overflow-hidden">
+    <section className="relative hero-gradient pt-16 md:pt-20 overflow-hidden">
       {/* Floating Flowers - Hidden on mobile */}
       <div className="floating-flower top-16 left-4 md:left-8 text-4xl hidden md:block" style={{ animationDelay: '0s' }}>
         🌸
@@ -14,10 +14,10 @@ const Hero = () => {
         🌷
       </div>
 
-      <div className="container mx-auto px-4 py-2 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 py-0 md:py-20">
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-12 items-center">
           {/* Image */}
-          <div className="relative animate-fade-in scale-110 lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
+          <div className="relative animate-fade-in lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
             <div className="relative rounded-3xl overflow-hidden shadow-elevated h-[400px] md:h-[600px]">
               <img
                 src="https://foreground-flow-forge.lovable.app/assets/hero-mothers-CEmrg4QZ.jpg"
@@ -25,8 +25,8 @@ const Hero = () => {
                 className="w-full h-full object-contain md:object-cover"
               />
               {/* Quote overlay */}
-              <div className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm p-4 md:p-6 mx-4 mb-4 rounded-2xl shadow-card">
-                <p className="text-center font-serif text-lg md:text-xl text-coral italic">
+              <div className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm p-3 md:p-6 mx-2 md:mx-4 mb-2 md:mb-4 rounded-2xl shadow-card">
+                <p className="text-center font-serif text-base md:text-xl text-coral italic">
                   "Hujambo Mama, Tupo Pamoja Na Wewe!"
                 </p>
               </div>
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
 
           {/* Text Content */}
-          <div className="space-y-6 md:space-y-8 animate-fade-in lg:order-1">
+          <div className="space-y-4 md:space-y-8 animate-fade-in lg:order-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-primary leading-tight">
               Kusaidia Mama Kwa Upendo Na Uelewa
             </h1>
