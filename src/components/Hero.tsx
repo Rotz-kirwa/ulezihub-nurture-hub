@@ -17,12 +17,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative animate-fade-in scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
-            <div className="relative rounded-3xl overflow-hidden shadow-elevated h-[600px]">
+          <div className="relative animate-fade-in scale-110 lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
+            <div className="relative rounded-3xl overflow-hidden shadow-elevated h-[400px] md:h-[600px]">
               <img
                 src="https://foreground-flow-forge.lovable.app/assets/hero-mothers-CEmrg4QZ.jpg"
                 alt="African mothers supporting each other through pregnancy and motherhood"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain md:object-cover"
               />
               {/* Quote overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm p-4 md:p-6 mx-4 mb-4 rounded-2xl shadow-card">
