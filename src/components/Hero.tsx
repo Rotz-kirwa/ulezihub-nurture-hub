@@ -14,10 +14,10 @@ const Hero = () => {
         🌷
       </div>
 
-      <div className="container mx-auto px-4 py-0 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-4 md:gap-12 items-center">
+      <div className="container mx-auto px-4 pb-4 md:py-20">
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-12 items-start md:items-center">
           {/* Image */}
-          <div className="relative animate-fade-in lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
+          <div className="relative animate-fade-in lg:scale-110 lg:order-2 -mt-2 md:mt-0" style={{ animationDelay: '0.3s' }}>
             <div className="relative rounded-3xl overflow-hidden shadow-elevated h-[400px] md:h-[600px]">
               <img
                 src="https://foreground-flow-forge.lovable.app/assets/hero-mothers-CEmrg4QZ.jpg"
