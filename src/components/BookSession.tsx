@@ -22,7 +22,7 @@ const BookSession = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const whatsappMessage = `Hello, I would like to book a session:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service}\nMessage: ${formData.message}`;
-    window.open(`https://wa.me/254711355485?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    window.open(`https://wa.me/254737633532?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
   return (
