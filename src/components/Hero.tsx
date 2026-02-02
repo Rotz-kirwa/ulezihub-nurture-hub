@@ -14,7 +14,7 @@ const Hero = () => {
         🌷
       </div>
 
-      <div className="container mx-auto px-4 py-12 md:py-20">
+      <div className="container mx-auto px-4 py-6 md:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="relative animate-fade-in scale-110 lg:scale-110 lg:order-2" style={{ animationDelay: '0.3s' }}>
