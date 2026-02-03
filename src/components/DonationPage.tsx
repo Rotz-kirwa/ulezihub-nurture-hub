@@ -70,18 +70,18 @@ const DonationPage = () => {
               <button
                 type="button"
                 onClick={() => setPaymentMethod('paybill')}
-                className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-all ${
+                className={`flex-1 py-2 md:py-3 px-2 md:px-4 rounded-lg font-semibold text-xs md:text-base transition-all ${
                   paymentMethod === 'paybill'
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'bg-sage-light text-foreground hover:bg-sage-light/80'
                 }`}
               >
-                Pay via Till Number
+                Till Number
               </button>
               <button
                 type="button"
                 onClick={() => setPaymentMethod('stk')}
-                className={`flex-1 py-3 px-4 rounded-lg font-semibold transition-all ${
+                className={`flex-1 py-2 md:py-3 px-2 md:px-4 rounded-lg font-semibold text-xs md:text-base transition-all ${
                   paymentMethod === 'stk'
                     ? 'bg-primary text-primary-foreground shadow-md'
                     : 'bg-sage-light text-foreground hover:bg-sage-light/80'
