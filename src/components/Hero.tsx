@@ -41,11 +41,14 @@ const Hero = () => {
             <p className="text-foreground/80 text-lg md:text-xl leading-relaxed max-w-xl">
               Pregnancy, childbirth, and breastfeeding are powerful yet challenging stages in a woman's life. Many women experience questions that come with physical, emotional, and informational challenges that are not fully addressed at routine clinic. Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="/services" className="btn-primary">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+              <a href="/services" className="btn-primary text-center text-sm sm:text-base px-4 sm:px-6">
                 Explore Services
               </a>
-              <a href="/book" className="btn-outline">
+              <a href="/donate" className="btn-outline text-center text-sm sm:text-base px-4 sm:px-6">
+                Donate
+              </a>
+              <a href="/book" className="btn-outline text-center text-sm sm:text-base px-4 sm:px-6">
                 Book a Session
               </a>
             </div>
