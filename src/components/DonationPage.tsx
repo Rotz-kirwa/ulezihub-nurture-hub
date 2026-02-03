@@ -49,23 +49,22 @@ const DonationPage = () => {
   const suggestedAmounts = [100, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000];
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-sage-light to-background w-full">
+    <section className="py-12 md:py-20 bg-gradient-to-b from-sage-light to-background w-full">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12 animate-fade-in">
-            <span className="text-5xl mb-4 block">💝</span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
+          <div className="text-center mb-8 animate-fade-in">
+            <span className="text-4xl mb-3 block">💝</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-3">
               Support Our Mission
             </h2>
-            <p className="text-foreground/70 text-lg leading-relaxed">
-              Your generous donation helps us provide essential maternal health support to mothers in need. 
-              Every contribution makes a difference in a mother's journey.
+            <p className="text-foreground/70 text-base leading-relaxed">
+              Your donation helps us provide essential maternal health support to mothers in need.
             </p>
           </div>
 
           {/* Donation Form */}
-          <div className="bg-card p-8 rounded-2xl shadow-elevated animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-card p-6 md:p-8 rounded-2xl shadow-elevated animate-fade-in" style={{ animationDelay: '0.2s' }}>
             {/* Payment Method Tabs */}
             <div className="flex gap-2 mb-6">
               <button
@@ -94,10 +93,10 @@ const DonationPage = () => {
 
             {/* Paybill Method */}
             {paymentMethod === 'paybill' && (
-              <div className="space-y-6">
-                <div className="bg-sage-light p-6 rounded-xl">
-                  <h3 className="font-semibold text-lg mb-4 text-center">M-Pesa Till Number Instructions</h3>
-                  <ol className="space-y-3 text-sm text-foreground/80">
+              <div className="space-y-4">
+                <div className="bg-sage-light p-4 md:p-6 rounded-xl">
+                  <h3 className="font-semibold text-base md:text-lg mb-3 text-center">M-Pesa Till Number Instructions</h3>
+                  <ol className="space-y-2 text-xs md:text-sm text-foreground/80">
                     <li className="flex gap-2">
                       <span className="font-semibold">1.</span>
                       <span>Go to M-Pesa menu on your phone</span>
@@ -165,12 +164,12 @@ const DonationPage = () => {
           </div>
 
           {/* Info */}
-          <div className="mt-8 bg-card p-6 rounded-2xl shadow-soft animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <h3 className="font-serif text-xl font-semibold text-primary mb-3 flex items-center gap-2">
-              <Heart className="w-5 h-5" />
+          <div className="mt-6 bg-card p-4 md:p-6 rounded-2xl shadow-soft animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <h3 className="font-serif text-lg md:text-xl font-semibold text-primary mb-2 flex items-center gap-2">
+              <Heart className="w-4 h-4 md:w-5 md:h-5" />
               How Your Donation Helps
             </h3>
-            <ul className="space-y-2 text-foreground/70 text-sm">
+            <ul className="space-y-1 text-foreground/70 text-xs md:text-sm">
               <li>• Provides free maternal health consultations</li>
               <li>• Supports mental health counseling for mothers</li>
               <li>• Funds educational materials and resources</li>
@@ -180,7 +179,7 @@ const DonationPage = () => {
           </div>
 
           {/* Security Note */}
-          <p className="text-center text-xs text-foreground/60 mt-6 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <p className="text-center text-xs text-foreground/60 mt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             🔒 Secure M-Pesa payment. You'll receive an STK Push prompt on your phone to complete the transaction.
           </p>
         </div>

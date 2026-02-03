@@ -59,27 +59,48 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
-            <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
+          <>
+            {/* Overlay */}
+            <div 
+              className="md:hidden fixed inset-0 bg-black/50 z-40 animate-fade-in"
+              onClick={() => setIsOpen(false)}
+            />
+            
+            {/* Slide-in Menu */}
+            <div className="md:hidden fixed right-0 top-0 h-full w-64 bg-card shadow-2xl z-50 animate-slide-in-right">
+              <div className="p-4">
+                {/* Close Button */}
+                <button
                   onClick={() => setIsOpen(false)}
-                  className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
+                  className="ml-auto p-2 text-foreground flex items-center justify-center"
+                  aria-label="Close menu"
                 >
-                  {link.label}
-                </a>
-              ))}
-              <a
-                href="/book"
-                onClick={() => setIsOpen(false)}
-                className="btn-primary text-center"
-              >
-                Book a Session
-              </a>
+                  <X size={24} />
+                </button>
+                
+                {/* Menu Items */}
+                <div className="flex flex-col gap-4 mt-4">
+                  {navLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-foreground/80 hover:text-primary transition-colors font-medium py-2 px-3 hover:bg-sage-light rounded-lg"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                  <a
+                    href="/book"
+                    onClick={() => setIsOpen(false)}
+                    className="btn-primary text-center mt-2"
+                  >
+                    Book a Session
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
+          </>
         )}
       </div>
     </nav>
