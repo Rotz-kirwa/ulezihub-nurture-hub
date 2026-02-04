@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Calendar, Clock } from 'lucide-react';
 
 const services = [
   'Preconception Counseling',
@@ -79,7 +80,8 @@ const BookSession = () => {
 
               {/* Date */}
               <div>
-                <label htmlFor="date" className="block text-sm font-semibold text-foreground mb-2">
+                <label htmlFor="date" className="block text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-primary" />
                   Preferred Date *
                 </label>
                 <input
@@ -95,7 +97,8 @@ const BookSession = () => {
 
               {/* Time */}
               <div>
-                <label htmlFor="time" className="block text-sm font-semibold text-foreground mb-2">
+                <label htmlFor="time" className="block text-sm font-semibold text-foreground mb-2 flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-primary" />
                   Preferred Time *
                 </label>
                 <input
