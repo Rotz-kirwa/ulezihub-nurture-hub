@@ -51,6 +51,9 @@ const Hero = () => {
               <a href="/pricing" className="btn-outline text-center text-xs sm:text-base px-3 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Pricing
               </a>
+              <a href="/donate" className="btn-outline text-center text-xs sm:text-base px-3 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                Donate
+              </a>
               <a href="/book" className="btn-outline text-center text-xs sm:text-base px-3 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Book
               </a>
