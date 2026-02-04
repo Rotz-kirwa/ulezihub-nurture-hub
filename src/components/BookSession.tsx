@@ -14,7 +14,6 @@ const services = [
 const BookSession = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     service: '',
     message: '',
@@ -22,7 +21,7 @@ const BookSession = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Hello, I would like to book a session:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService: ${formData.service}\nMessage: ${formData.message}`;
+    const whatsappMessage = `Hello, I would like to book a session:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nMessage: ${formData.message}`;
     window.open(`https://wa.me/254737633532?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
@@ -57,22 +56,6 @@ const BookSession = () => {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
                   placeholder="Enter your full name"
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  placeholder="your.email@example.com"
                 />
               </div>
 
