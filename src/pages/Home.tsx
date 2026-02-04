@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 const Home = () => {
   return (
-    <div className="min-h-screen -mt-16 md:mt-0">
+    <div className="min-h-screen">
       <Navbar />
       <Hero />
       <Footer />

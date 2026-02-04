@@ -56,10 +56,13 @@ const DonationPage = () => {
           <div className="text-center mb-8 animate-fade-in">
             <span className="text-4xl mb-3 block">💝</span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-3">
-              Support Our Mission
+              Our Pricing
             </h2>
-            <p className="text-foreground/70 text-base leading-relaxed">
-              Your donation helps us provide essential maternal health support to mothers in need.
+            <p className="text-foreground/70 text-base leading-relaxed mb-2">
+              Our services are priced affordably to ensure accessibility for all mothers.
+            </p>
+            <p className="text-primary font-semibold text-lg md:text-xl">
+              Pricing ranges from KES 500 - 1,500 per session
             </p>
           </div>
 
@@ -167,7 +170,7 @@ const DonationPage = () => {
           <div className="mt-6 bg-card p-4 md:p-6 rounded-2xl shadow-soft animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="font-serif text-lg md:text-xl font-semibold text-primary mb-2 flex items-center gap-2">
               <Heart className="w-4 h-4 md:w-5 md:h-5" />
-              How Your Donation Helps
+              How Your Payment Helps
             </h3>
             <ul className="space-y-1 text-foreground/70 text-xs md:text-sm">
               <li>• Provides free maternal health consultations</li>

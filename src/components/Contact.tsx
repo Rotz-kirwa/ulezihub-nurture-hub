@@ -1,13 +1,6 @@
-import { Mail, Phone, Facebook } from 'lucide-react';
+import { Phone, Facebook, Linkedin } from 'lucide-react';
 
 const contactLinks = [
-  { 
-    icon: Mail, 
-    label: 'Email Us', 
-    value: 'jifunzeulezihub@gmail.com',
-    href: 'mailto:jifunzeulezihub@gmail.com', 
-    color: 'bg-blue-50 hover:bg-blue-100 border-blue-200'
-  },
   { 
     icon: Phone, 
     label: 'Call Us', 
@@ -21,6 +14,13 @@ const contactLinks = [
     value: 'Facebook Page',
     href: 'https://www.facebook.com/profile.php?id=61587205564279', 
     color: 'bg-indigo-50 hover:bg-indigo-100 border-indigo-200'
+  },
+  { 
+    icon: Linkedin, 
+    label: 'Connect', 
+    value: 'LinkedIn Profile',
+    href: 'https://www.linkedin.com/in/kenneth-onyango-8b048868', 
+    color: 'bg-blue-50 hover:bg-blue-100 border-blue-200'
   },
 ];
 
