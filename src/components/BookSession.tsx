@@ -73,7 +73,7 @@ const BookSession = () => {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
-                  placeholder="+254 XXX XXX XXX"
+                  placeholder="07XX XXX XXX"
                 />
               </div>
 
