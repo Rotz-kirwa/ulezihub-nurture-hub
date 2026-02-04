@@ -21,7 +21,7 @@ const Hero = () => {
             <img
               src="https://foreground-flow-forge.lovable.app/assets/hero-mothers-CEmrg4QZ.jpg"
               alt="Mothers supporting each other through pregnancy and motherhood"
-              className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+              className="w-full h-auto md:h-[500px] lg:h-[600px] object-contain md:object-cover"
               loading="eager"
               fetchpriority="high"
             />
