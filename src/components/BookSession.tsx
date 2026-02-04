@@ -15,13 +15,15 @@ const BookSession = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    date: '',
+    time: '',
     service: '',
     message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Hello, I would like to book a session:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nMessage: ${formData.message}`;
+    const whatsappMessage = `Hello, I would like to book a session:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nPreferred Date: ${formData.date}\nPreferred Time: ${formData.time}\nService: ${formData.service}\nMessage: ${formData.message}`;
     window.open(`https://wa.me/254737633532?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
@@ -72,6 +74,37 @@ const BookSession = () => {
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
                   placeholder="+254 XXX XXX XXX"
+                />
+              </div>
+
+              {/* Date */}
+              <div>
+                <label htmlFor="date" className="block text-sm font-semibold text-foreground mb-2">
+                  Preferred Date *
+                </label>
+                <input
+                  type="date"
+                  id="date"
+                  required
+                  value={formData.date}
+                  onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                  className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
+                  min={new Date().toISOString().split('T')[0]}
+                />
+              </div>
+
+              {/* Time */}
+              <div>
+                <label htmlFor="time" className="block text-sm font-semibold text-foreground mb-2">
+                  Preferred Time *
+                </label>
+                <input
+                  type="time"
+                  id="time"
+                  required
+                  value={formData.time}
+                  onChange={(e) => setFormData({ ...formData, time: e.target.value })}
+                  className="w-full px-4 py-3 rounded-lg border-2 border-border focus:border-primary focus:outline-none transition-colors"
                 />
               </div>
 
