@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import BookPage from "./pages/BookPage";
 import Donate from "./pages/Donate";
 import DonatePage from "./pages/DonatePage";
+import TestimonialsPage from "./pages/TestimonialsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/book" element={<BookPage />} />
           <Route path="/pricing" element={<Donate />} />
