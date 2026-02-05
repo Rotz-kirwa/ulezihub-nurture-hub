@@ -8,7 +8,7 @@ const services = [
   'Infant Feeding 1st 2 Weeks & Up to 6 Months',
   'HIV Context in Pregnancy and Lactation',
   'Maternal Mental & Emotional Support',
-  'Men & Boy Child Role in Maternal Child Health',
+  'Men & Boy Role in Maternal Health',
   'Community Individualized Expert Support',
 ];
 

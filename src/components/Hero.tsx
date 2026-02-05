@@ -1,14 +1,14 @@
 
 
 const services = [
-  { icon: '🤰', title: 'Preconception Counseling' },
-  { icon: '📅', title: 'Pregnancy Journey & What to Expect' },
-  { icon: '👶', title: 'Education at Childbirth' },
-  { icon: '🍼', title: 'Infant Feeding Support' },
-  { icon: '❤️', title: 'HIV Context Support' },
-  { icon: '🧠', title: 'Maternal Mental Health' },
-  { icon: '👨👦', title: 'Men & Boy Child Role' },
-  { icon: '👥', title: 'Community Expert Support' },
+  { icon: '🤰', title: 'Preconception Counseling', description: 'Prepare your body and mind for a healthy pregnancy journey' },
+  { icon: '📅', title: 'Pregnancy Journey & What to Expect', description: 'Month-by-month guidance through your pregnancy' },
+  { icon: '👶', title: 'Education at Childbirth & What to Expect', description: 'Understanding labor, delivery, and postpartum care' },
+  { icon: '🍼', title: 'Infant Feeding 1st 2 Weeks & Up to 6 Months', description: 'Breastfeeding support and infant nutrition guidance' },
+  { icon: '❤️', title: 'HIV Context in Pregnancy and Lactation', description: 'Specialized support for HIV-positive mothers' },
+  { icon: '🧠', title: 'Maternal Mental & Emotional Support', description: 'Addressing anxiety, depression, and emotional wellness' },
+  { icon: '👨👦', title: 'Men & Boy Role in Maternal Health', description: 'Engaging fathers and boys in supporting maternal health' },
+  { icon: '👥', title: 'Community Individualized Expert Support', description: 'Personalized support from our team of experts' },
 ];
 
 const Hero = () => {
@@ -57,6 +57,9 @@ const Hero = () => {
               <a href="/book" className="btn-outline text-center text-xs sm:text-base px-3 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Book
               </a>
+              <a href="/privacy-policy" className="btn-outline text-center text-xs sm:text-base px-3 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                Privacy
+              </a>
             </div>
           </div>
 
@@ -69,10 +72,13 @@ const Hero = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-soft transition-shadow"
+                  className="flex items-start gap-3 p-3 bg-white rounded-lg hover:shadow-soft transition-shadow"
                 >
                   <span className="text-2xl flex-shrink-0">{service.icon}</span>
-                  <span className="text-foreground/80 text-sm md:text-base">{service.title}</span>
+                  <div>
+                    <h3 className="text-foreground font-semibold text-sm md:text-base mb-1">{service.title}</h3>
+                    <p className="text-foreground/60 text-xs md:text-sm">{service.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

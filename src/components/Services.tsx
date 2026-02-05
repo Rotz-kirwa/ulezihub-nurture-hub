@@ -30,9 +30,9 @@ const services = [
     description: 'Addressing anxiety, depression, and emotional wellness',
   },
   {
-    icon: '👨‍👦',
-    title: 'Men & Boy Child Role in Maternal Child Health',
-    description: 'Engaging fathers and boys in supporting maternal and child health',
+    icon: '👨👦',
+    title: 'Men & Boy Role in Maternal Health',
+    description: 'Engaging fathers and boys in supporting maternal health',
   },
   {
     icon: '👥',
