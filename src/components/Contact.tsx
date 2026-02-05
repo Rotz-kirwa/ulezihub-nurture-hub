@@ -1,4 +1,4 @@
-import { Phone, Facebook, Linkedin } from 'lucide-react';
+import { Phone, Facebook, Linkedin, ArrowRight } from 'lucide-react';
 
 const contactLinks = [
   { 
@@ -62,6 +62,7 @@ const Contact = () => {
                   <p className="text-sm text-foreground/70 font-medium">
                     {link.value}
                   </p>
+                  <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
                 </a>
               );
             })}
@@ -89,6 +90,7 @@ const Contact = () => {
                         {link.value}
                       </p>
                     </div>
+                    <ArrowRight className="w-4 h-4 text-primary flex-shrink-0" />
                   </a>
                 );
               })}
@@ -108,6 +110,13 @@ const Contact = () => {
             </p>
             <p className="text-sm text-foreground/60 italic">
               For urgent matters, please contact us via WhatsApp
+            </p>
+          </div>
+
+          {/* Privacy Notice */}
+          <div className="mt-6 text-center bg-sage-light p-6 rounded-2xl animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <p className="text-sm text-foreground/70">
+              🔒 We will protect your privacy. All communications are confidential and your personal information is kept secure.
             </p>
           </div>
         </div>

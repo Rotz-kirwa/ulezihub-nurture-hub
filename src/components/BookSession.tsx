@@ -147,6 +147,13 @@ const BookSession = () => {
                 />
               </div>
 
+              {/* Privacy Policy */}
+              <div className="bg-sage-light p-4 rounded-lg">
+                <p className="text-sm text-foreground/70">
+                  By clicking submit, you agree to our privacy policy and consent to the collection and use of your personal information for booking purposes. Your data will be kept confidential and used solely to provide you with our services.
+                </p>
+              </div>
+
               {/* Submit Button */}
               <button
                 type="submit"

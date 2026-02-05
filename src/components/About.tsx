@@ -48,7 +48,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -59,6 +59,42 @@ const About = () => {
                 <div className="stat-label">{stat.label}</div>
               </div>
             ))}
+          </div>
+
+          {/* Specialists Section */}
+          <div className="text-center mb-8">
+            <h3 className="font-serif text-3xl font-bold text-primary mb-4">Our Specialists</h3>
+            <p className="text-foreground/70 text-lg">Meet the experts dedicated to your maternal health journey</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-card rounded-2xl p-6 shadow-card text-center">
+              <img 
+                src="https://www.dropbox.com/scl/fi/9c4dgc9nbfrr72n6xs4tn/mdoc.jpeg?rlkey=z7b8mtm2k72f4glnbhk31kmho&st=4chrtewn&raw=1" 
+                alt="Kenneth O. Odhiambo"
+                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover shadow-soft"
+              />
+              <h4 className="font-serif text-xl font-semibold text-primary mb-2">Kenneth O. Odhiambo</h4>
+              <p className="text-coral font-medium mb-3">County PMTCT and Pediatric Specialist</p>
+              <div className="text-foreground/70 text-sm space-y-1">
+                <p>MPH: Epidemiology & Nutrition</p>
+                <p>BSc PH | RN</p>
+                <p className="font-medium mt-2">CIHEB Kenya</p>
+              </div>
+            </div>
+
+            <div className="bg-card rounded-2xl p-6 shadow-card text-center">
+              <img 
+                src="https://www.dropbox.com/scl/fi/iksl9tarokolee5q56px6/sdoc.jpeg?rlkey=2apsfpbhrpnkolow8jolc707z&st=292ys1ss&raw=1" 
+                alt="Agnes Onyango"
+                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover shadow-soft"
+              />
+              <h4 className="font-serif text-xl font-semibold text-primary mb-2">Agnes Onyango</h4>
+              <p className="text-coral font-medium mb-3">Senior RN & Midwife</p>
+              <div className="text-foreground/70 text-sm">
+                <p className="font-medium">Jaramogi Teaching and Referral Hospital</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
