@@ -79,7 +79,6 @@ const About = () => {
               <div className="text-foreground/70 text-sm space-y-1">
                 <p>MPH: Epidemiology & Nutrition</p>
                 <p>BSc PH | RN</p>
-                <p className="font-medium mt-2">CIHEB Kenya</p>
               </div>
             </div>
 
@@ -91,9 +90,6 @@ const About = () => {
               />
               <h4 className="font-serif text-xl font-semibold text-primary mb-2">Agnes Onyango</h4>
               <p className="text-coral font-medium mb-3">Senior RN & Midwife</p>
-              <div className="text-foreground/70 text-sm">
-                <p className="font-medium">Jaramogi Teaching and Referral Hospital</p>
-              </div>
             </div>
           </div>
         </div>
