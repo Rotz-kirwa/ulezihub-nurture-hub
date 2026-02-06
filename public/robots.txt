@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jifunzeulezihub.com/sitemap.xml
+Sitemap: https://www.jifunzeulezi.co.ke/sitemap.xml
