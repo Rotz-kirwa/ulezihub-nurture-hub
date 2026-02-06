@@ -28,59 +28,65 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Content Section: Text + Services */}
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-          {/* Text Content */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
-              Nurturing Healthy Motherhood, Fatherhood and Childhood Experience
-            </h1>
-            
-            <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-              Pregnancy, childbirth, and breastfeeding are powerful yet challenging stages in a woman's life. Many women experience questions that come with physical, emotional, and informational challenges that are not fully addressed.
-            </p>
-            
-            <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
-              Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
-            </p>
+        {/* Content Section with Background: Text + Services */}
+        <div 
+          className="relative bg-cover bg-center rounded-2xl overflow-hidden"
+          style={{ backgroundImage: "url('https://www.dropbox.com/scl/fi/ecumnmxcrxqc69se9aijv/back.jpeg?rlkey=ptxwkpp2ncgftuh5dyd0it86i&st=a9zixku6&raw=1')" }}
+        >
+          <div className="absolute inset-0 bg-cream/70"></div>
+          <div className="relative grid lg:grid-cols-2 gap-8 md:gap-12 p-6 md:p-8">
+            {/* Text Content */}
+            <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
+                Nurturing Healthy Motherhood, Fatherhood and Childhood Experience
+              </h1>
+              
+              <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
+                Pregnancy, childbirth, and breastfeeding are powerful yet challenging stages in a woman's life. Many women experience questions that come with physical, emotional, and informational challenges that are not fully addressed.
+              </p>
+              
+              <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
+                Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
+              </p>
 
-            <div className="flex gap-1 sm:gap-4 pt-4">
-              <a href="/services" className="btn-primary text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                Services
-              </a>
-              <a href="/pricing" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                Pricing
-              </a>
-              <a href="/donate" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                Donate
-              </a>
-              <a href="/book" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                Book
-              </a>
-              <a href="/privacy-policy" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                Privacy
-              </a>
+              <div className="flex gap-1 sm:gap-4 pt-4">
+                <a href="/services" className="btn-primary text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                  Services
+                </a>
+                <a href="/pricing" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                  Pricing
+                </a>
+                <a href="/donate" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                  Donate
+                </a>
+                <a href="/book" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                  Book
+                </a>
+                <a href="/privacy-policy" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
+                  Privacy
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Services List */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-primary mb-6">
-              Our Services
-            </h2>
-            <div className="space-y-3">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-3 bg-white rounded-lg hover:shadow-soft transition-shadow"
-                >
-                  <span className="text-2xl flex-shrink-0">{service.icon}</span>
-                  <div>
-                    <h3 className="text-foreground font-semibold text-sm md:text-base mb-1">{service.title}</h3>
-                    <p className="text-foreground/60 text-xs md:text-sm">{service.description}</p>
+            {/* Services List */}
+            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-primary mb-6">
+                Our Services
+              </h2>
+              <div className="space-y-3">
+                {services.map((service, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start gap-3 p-3 bg-white rounded-lg hover:shadow-soft transition-shadow"
+                  >
+                    <span className="text-2xl flex-shrink-0">{service.icon}</span>
+                    <div>
+                      <h3 className="text-foreground font-semibold text-sm md:text-base mb-1">{service.title}</h3>
+                      <p className="text-foreground/60 text-xs md:text-sm">{service.description}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
