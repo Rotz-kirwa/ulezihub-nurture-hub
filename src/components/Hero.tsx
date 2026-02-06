@@ -44,20 +44,20 @@ const Hero = () => {
               Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
             </p>
 
-            <div className="flex flex-wrap gap-1.5 sm:gap-4 pt-4">
-              <a href="/services" className="btn-primary text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
+            <div className="flex gap-1 sm:gap-4 pt-4">
+              <a href="/services" className="btn-primary text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Services
               </a>
-              <a href="/pricing" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
+              <a href="/pricing" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Pricing
               </a>
-              <a href="/donate" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
+              <a href="/donate" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Donate
               </a>
-              <a href="/book" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
+              <a href="/book" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Book
               </a>
-              <a href="/privacy-policy" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
+              <a href="/privacy-policy" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                 Privacy
               </a>
             </div>
