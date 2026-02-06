@@ -44,20 +44,20 @@ const Hero = () => {
               Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
             </p>
 
-            <div className="flex flex-wrap gap-2 sm:gap-4 pt-4">
-              <a href="/services" className="btn-primary text-center text-xs sm:text-base px-2 py-2 sm:px-6 sm:py-3">
+            <div className="flex flex-wrap gap-1.5 sm:gap-4 pt-4">
+              <a href="/services" className="btn-primary text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
                 Services
               </a>
-              <a href="/pricing" className="btn-outline text-center text-xs sm:text-base px-2 py-2 sm:px-6 sm:py-3">
+              <a href="/pricing" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
                 Pricing
               </a>
-              <a href="/donate" className="btn-outline text-center text-xs sm:text-base px-2 py-2 sm:px-6 sm:py-3">
+              <a href="/donate" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
                 Donate
               </a>
-              <a href="/book" className="btn-outline text-center text-xs sm:text-base px-2 py-2 sm:px-6 sm:py-3">
+              <a href="/book" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
                 Book
               </a>
-              <a href="/privacy-policy" className="btn-outline text-center text-xs sm:text-base px-2 py-2 sm:px-6 sm:py-3">
+              <a href="/privacy-policy" className="btn-outline text-center text-xs sm:text-base px-2.5 py-2 sm:px-6 sm:py-3">
                 Privacy
               </a>
             </div>
