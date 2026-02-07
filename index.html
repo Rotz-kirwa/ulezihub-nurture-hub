@@ -93,6 +93,33 @@
 
   <body>
     <div id="root"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="position: fixed; inset: 0; background: #FFF8F0; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 9999;">
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🌱</div>
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #2D5F4F; margin-bottom: 0.5rem;">Jifunze Ulezi Hub</h1>
+        <p style="color: #E07856; font-size: 0.875rem; letter-spacing: 0.1em;">NURTURE HUB</p>
+        <div style="margin-top: 2rem;">
+          <div style="width: 40px; height: 40px; border: 3px solid #E8F5E9; border-top-color: #2D5F4F; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.getElementById('loading-screen').style.display = 'none';
+        }, 500);
+      });
+    </script>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
