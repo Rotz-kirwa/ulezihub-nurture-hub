@@ -30,10 +30,15 @@ const Hero = () => {
 
         {/* Content Section with Background: Text + Services */}
         <div 
-          className="relative bg-cover bg-center rounded-2xl overflow-hidden"
-          style={{ backgroundImage: "url('https://www.dropbox.com/scl/fi/ecumnmxcrxqc69se9aijv/back.jpeg?rlkey=ptxwkpp2ncgftuh5dyd0it86i&st=a9zixku6&raw=1')" }}
+          className="relative md:rounded-2xl overflow-hidden"
+          style={{ 
+            backgroundImage: "url('https://www.dropbox.com/scl/fi/ecumnmxcrxqc69se9aijv/back.jpeg?rlkey=ptxwkpp2ncgftuh5dyd0it86i&st=a9zixku6&raw=1')",
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+          }}
         >
-          <div className="absolute inset-0 bg-cream/70"></div>
+          <div className="absolute inset-0 bg-cream/85 md:bg-cream/70"></div>
           <div className="relative grid lg:grid-cols-2 gap-8 md:gap-12 p-6 md:p-8">
             {/* Text Content */}
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
