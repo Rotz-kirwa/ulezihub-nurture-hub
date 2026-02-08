@@ -24,7 +24,7 @@ const Navbar = () => {
               <span className="text-2xl">🌱</span>
               <div>
                 <span className="font-serif text-xl md:text-2xl font-semibold text-primary">
-                  Jifunze Ulezi HUb
+                  Ulezi Hub
                 </span>
                 <span className="block text-xs text-coral font-medium tracking-wider">
                   NURTURE HUB
