@@ -1,3 +1,4 @@
+import heroImage from '@/assets/hero-mothers.jpg';
 import ShareButton from './ShareButton';
 
 const services = [
@@ -19,11 +20,10 @@ const Hero = () => {
         <div className="mb-8 md:mb-12 animate-fade-in">
           <div className="rounded-2xl overflow-hidden shadow-soft">
             <img
-              src="https://foreground-flow-forge.lovable.app/assets/hero-mothers-CEmrg4QZ.jpg"
+              src={heroImage}
               alt="Mothers supporting each other through pregnancy and motherhood"
               className="w-full h-auto md:h-[500px] lg:h-[600px] object-contain md:object-cover"
               loading="eager"
-              fetchPriority="high"
             />
           </div>
         </div>
