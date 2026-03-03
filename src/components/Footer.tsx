@@ -1,3 +1,5 @@
+import ShareButton from './ShareButton';
+
 const Footer = () => {
   return (
     <footer className="py-8 bg-sage-dark text-primary-foreground">
@@ -26,9 +28,12 @@ const Footer = () => {
             <div className="font-serif font-semibold mb-1">
               Jifunze Ulezi HUb: Nurture HUB
             </div>
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-primary-foreground/60 text-sm mb-4">
               © 2026 All rights reserved. Supporting mothers with love and care.
             </p>
+            <div className="flex justify-center">
+              <ShareButton className="bg-white/10 hover:bg-white/20 text-white border border-white/30" />
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-
+import ShareButton from './ShareButton';
 
 const services = [
   { icon: '🤰', title: 'Preconception Counseling', description: 'Prepare your body and mind for a healthy pregnancy journey' },
@@ -23,7 +23,7 @@ const Hero = () => {
               alt="Mothers supporting each other through pregnancy and motherhood"
               className="w-full h-auto md:h-[500px] lg:h-[600px] object-contain md:object-cover"
               loading="eager"
-              fetchpriority="high"
+              fetchPriority="high"
             />
           </div>
         </div>
@@ -54,7 +54,7 @@ const Hero = () => {
                 Our expert team seeks to reach pregnant and lactating women in virtual spaces or in-person to offer customized, personalized compassionate maternal support for a better experience on maternal health during this transitional period.
               </p>
 
-              <div className="flex gap-1 sm:gap-4 pt-4">
+              <div className="flex flex-wrap gap-1 sm:gap-4 pt-4">
                 <a href="/services" className="btn-primary text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                   Services
                 </a>
@@ -67,9 +67,9 @@ const Hero = () => {
                 <a href="/book" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
                   Book
                 </a>
-                <a href="/privacy-policy" className="btn-outline text-center text-[10px] sm:text-base px-1.5 py-2 sm:px-6 sm:py-3 flex-1 sm:flex-none">
-                  Privacy
-                </a>
+              </div>
+              <div className="pt-4">
+                <ShareButton />
               </div>
             </div>
 
