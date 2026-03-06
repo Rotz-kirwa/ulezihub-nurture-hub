@@ -45,7 +45,7 @@ const ShareButton = ({
     {
       name: 'WhatsApp',
       icon: MessageCircle,
-      href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+      href: `https://wa.me/?text=${encodedTitle}%0A%0A${encodedDescription}%0A%0A${encodedUrl}`,
       color: 'bg-green-500 hover:bg-green-600',
       textColor: 'text-white'
     }
